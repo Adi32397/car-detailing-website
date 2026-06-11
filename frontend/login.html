@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - ShineX Auto Spa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .auth-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%), url('assets/hero.png') center/cover no-repeat;
+            padding: 20px;
+        }
+
+        .auth-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            width: 100%;
+            max-width: 450px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .auth-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .auth-header h2 {
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .auth-header p {
+            color: var(--text-secondary);
+        }
+
+        .auth-tabs {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .auth-tab {
+            flex: 1;
+            text-align: center;
+            padding: 15px 0;
+            color: var(--text-secondary);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            border-bottom: 2px solid transparent;
+        }
+
+        .auth-tab.active {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+        }
+
+        .auth-form {
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .auth-form.active {
+            display: flex;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 10;
+        }
+
+        .toggle-password:hover {
+            color: var(--accent-color);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 16px 45px 16px 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: #fff;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .btn-auth {
+            background: var(--accent-color);
+            color: #000;
+            border: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+        }
+
+        .btn-auth:hover {
+            background: var(--accent-color-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .back-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+        }
+
+        .back-home:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i></a>
+            
+            <div class="auth-header">
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-car-sparkles"></i> Shine<span>X</span>
+                </a>
+                <h2 id="authTitle">Welcome Back</h2>
+                <p id="authSubtitle">Sign in to manage your appointments</p>
+            </div>
+
+            <div class="auth-tabs">
+                <div class="auth-tab active" id="tabSignIn">Sign In</div>
+                <div class="auth-tab" id="tabSignUp">Create Account</div>
+            </div>
+
+            <!-- Sign In Form -->
+            <form class="auth-form active" id="signInForm">
+                <div class="form-group">
+                    <input type="email" id="loginEmail" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <i class="fa-regular fa-eye toggle-password" id="toggleLoginPassword"></i>
+                </div>
+                <button type="submit" class="btn-auth">Sign In</button>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form class="auth-form" id="signUpForm">
+                <div class="form-group">
+                    <input type="text" id="registerName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="registerEmail" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerPassword" placeholder="Password" required>
+                    <i class="fa-regular fa-eye toggle-password" id="toggleRegisterPassword"></i>
+                </div>
+                <button type="submit" class="btn-auth">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

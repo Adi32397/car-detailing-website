@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShineX Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fa-solid fa-car-sparkles"></i> Shine<span>X</span> Admin</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="active" data-target="bookings-section"><i class="fa-solid fa-calendar-check"></i> Bookings</li>
+                <li data-target="messages-section"><i class="fa-solid fa-envelope"></i> Messages</li>
+                <li><a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Site</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <h1>Dashboard Overview</h1>
+            </header>
+
+            <!-- Bookings Section -->
+            <section id="bookings-section" class="content-section active">
+                <div class="section-header">
+                    <h2>Recent Bookings</h2>
+                    <button class="btn btn-refresh" onclick="fetchBookings()"><i class="fa-solid fa-rotate-right"></i> Refresh</button>
+                </div>
+                <div class="table-container">
+                    <table id="bookings-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Customer</th>
+                                <th>Contact</th>
+                                <th>Vehicle</th>
+                                <th>Service</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bookings-body">
+                            <!-- Bookings will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Messages Section -->
+            <section id="messages-section" class="content-section">
+                <div class="section-header">
+                    <h2>Contact Messages</h2>
+                    <button class="btn btn-refresh" onclick="fetchMessages()"><i class="fa-solid fa-rotate-right"></i> Refresh</button>
+                </div>
+                <div class="table-container">
+                    <table id="messages-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Message</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="messages-body">
+                            <!-- Messages will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

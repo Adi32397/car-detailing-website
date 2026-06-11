@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShineX Auto Spa | Premium Car Detailing</title>
+    <meta name="description"
+        content="Premium Car Detailing That Makes Your Car Shine Like New. Exterior wash, ceramic coating, PPF, and interior deep cleaning.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Left: Logo -->
+            <a href="#" class="logo">
+                <i class="fa-solid fa-car-sparkles"></i> Shine<span>X</span>
+            </a>
+            
+            <!-- Center: Links -->
+            <ul class="nav-links center-links">
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+            </ul>
+            
+            <!-- Right: Actions -->
+            <ul class="nav-links right-links">
+                <li id="authNavLi"><a href="login.html" id="authNavLink">LOG IN</a></li>
+                <li><a href="login.html#signup">JOIN US!</a></li>
+                <li><a href="#book" class="nav-icon-link"><i class="fa-solid fa-calendar-check"></i> BOOK APPOINTMENT</a></li>
+            </ul>
+
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero stock-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal" style="max-width: 900px; text-align: center; margin: 0 auto;">
+            <h1 class="stock-headline">Premium Auto Detailing Services</h1>
+            <p class="stock-subheadline">New premium packages added, <a href="#pricing">free from compromises.</a></p>
+            
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search services (e.g. Ceramic Coating)...">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="trending-tags">
+                <span class="trending-label">Trending:</span>
+                <a href="#services">ceramic coating</a>
+                <a href="#services">interior clean</a>
+                <a href="#services">ppf</a>
+                <a href="#pricing">basic wash</a>
+                <a href="#services">paint correction</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Our Premium Services</h2>
+                <p>Comprehensive auto care designed to restore, protect, and maintain your vehicle's pristine condition.
+                </p>
+            </div>
+            <div class="services-grid">
+                <a href="service-details.html?id=exterior-detailing" class="service-card reveal" style="display: block; text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="icon"><i class="fa-solid fa-droplet"></i></div>
+                    <h3>Exterior Wash & Wax</h3>
+                    <p>Meticulous hand wash and premium carnauba wax application for a deep, mirror-like gloss.</p>
+                </a>
+                <a href="service-details.html?id=ceramic-coating" class="service-card reveal" style="transition-delay: 0.1s; display: block; text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Ceramic Coating</h3>
+                    <p>Long-lasting nanoceramic protection against scratches, dirt, and UV damage.</p>
+                </a>
+                <a href="service-details.html?id=interior-detailing" class="service-card reveal" style="transition-delay: 0.2s; display: block; text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="icon"><i class="fa-solid fa-couch"></i></div>
+                    <h3>Interior Deep Cleaning</h3>
+                    <p>Complete vacuuming, steam cleaning, and leather conditioning for a fresh cabin.</p>
+                </a>
+                <a href="service-details.html?id=ppf" class="service-card reveal" style="display: block; text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Paint Protection Film (PPF)</h3>
+                    <p>Invisible shield defending your paint from rock chips, bug splatters, and minor abrasions.</p>
+                </a>
+                <a href="service-details.html?id=headlight-restoration" class="service-card reveal" style="transition-delay: 0.1s; display: block; text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3>Headlight Restoration</h3>
+                    <p>Remove oxidation and yellowing to restore crystal clear nighttime visibility.</p>
+                </a>
+                <a href="service-details.html?id=engine-bay-cleaning" class="service-card reveal" style="transition-delay: 0.2s; display: block; text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Engine Bay Cleaning</h3>
+                    <p>Safe and thorough degreasing and dressing for a showroom-ready engine compartment.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="why-choose-us section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <h2>Why Choose ShineX?</h2>
+                    <p>We are passionate about perfection. Our team combines years of experience with state-of-the-art
+                        techniques and premium products to deliver exceptional results every time.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Certified Professionals</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Premium Products</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Affordable Pricing</li>
+                        <li><i class="fa-solid fa-check-circle"></i> 100% Customer Satisfaction</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Quick Turnaround Time</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Eco-Friendly Cleaning</li>
+                    </ul>
+
+                    <div class="developer-info" style="margin-top: 40px; padding: 25px; background: rgba(192, 133, 82, 0.05); border-left: 4px solid var(--accent-color); border-radius: 8px; display: flex; align-items: center; gap: 20px;">
+                        <div class="dev-image" style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; border: 2px solid var(--accent-color); flex-shrink: 0; background: rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center;">
+                            <!-- Replace the src below with your actual photo path -->
+                            <img src="assets/developer.png" alt="Aditya Singh Saini" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <i class="fa-solid fa-user" style="font-size: 2.5rem; color: rgba(75, 46, 43, 0.3); display: none;"></i>
+                        </div>
+                        <div class="dev-details">
+                            <h4 style="margin-bottom: 5px; font-size: 1.2rem; color: var(--text-primary);">Meet the Developer</h4>
+                            <p style="margin-bottom: 8px; font-weight: 600; color: var(--accent-color); font-size: 1.1rem;">
+                                Aditya Singh Saini <span style="font-weight: 400; color: var(--text-secondary); font-size: 0.95rem;">(Student)</span>
+                            </p>
+                            <a href="https://www.linkedin.com/in/aditya-singh-saini-a3654731b/" target="_blank" style="color: var(--text-secondary); display: inline-flex; align-items: center; gap: 8px; transition: color 0.3s ease;" onmouseover="this.style.color='#0A66C2'" onmouseout="this.style.color='var(--text-secondary)'">
+                                <i class="fa-brands fa-linkedin" style="color: #0A66C2; font-size: 1.2rem;"></i> Connect on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal" style="transition-delay: 0.2s;">
+                    <img src="assets/interior.png" alt="Interior Detailing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics section">
+        <div class="container">
+            <div class="stats-grid" id="stats">
+                <div class="stat-item reveal">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <p>Cars Detailed</p>
+                </div>
+                <div class="stat-item reveal" style="transition-delay: 0.1s;">
+                    <div class="stat-number" data-target="3000">0</div>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item reveal" style="transition-delay: 0.2s;">
+                    <div class="stat-number" data-target="8">0</div>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item reveal" style="transition-delay: 0.3s;">
+                    <div class="stat-number" data-target="4.9">0</div>
+                    <p>Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Gallery -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Before & After Gallery</h2>
+                <p>Witness the transformative power of our premium detailing services.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div class="before-after-container" style="display: flex; height: 100%;">
+                        <div style="position: relative; flex: 1; border-right: 2px solid #fff;">
+                            <img src="assets/before1.png" alt="Before Restoration" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 2;">Before</span>
+                        </div>
+                        <div style="position: relative; flex: 1;">
+                            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=600&q=80" alt="After Restoration" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span style="position: absolute; top: 10px; left: 10px; background: var(--accent-color); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 2;">After</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Exterior Restoration</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" style="transition-delay: 0.1s;">
+                    <div class="before-after-container" style="display: flex; height: 100%;">
+                        <div style="position: relative; flex: 1; border-right: 2px solid #fff;">
+                            <img src="assets/before2.png" alt="Before Ceramic Coating" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 2;">Before</span>
+                        </div>
+                        <div style="position: relative; flex: 1;">
+                            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=600&q=80" alt="After Ceramic Coating" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span style="position: absolute; top: 10px; left: 10px; background: var(--accent-color); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 2;">After</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Ceramic Coating</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" style="transition-delay: 0.2s;">
+                    <div class="before-after-container" style="display: flex; height: 100%;">
+                        <div style="position: relative; flex: 1; border-right: 2px solid #fff;">
+                            <img src="assets/before3.png" alt="Before Paint Correction" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 2;">Before</span>
+                        </div>
+                        <div style="position: relative; flex: 1;">
+                            <img src="assets/after3.png" alt="After Paint Correction" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span style="position: absolute; top: 10px; left: 10px; background: var(--accent-color); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 2;">After</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Paint Correction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section id="pricing" class="pricing section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Transparent Pricing</h2>
+                <p>Choose the perfect package for your vehicle's needs.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <h3>Basic Wash</h3>
+                    <div class="price">₹2000</div>
+                    <ul class="pricing-features">
+                        <li>Exterior Hand Wash</li>
+                        <li>Wheel & Tire Cleaning</li>
+                        <li>Interior Vacuum</li>
+                        <li>Window Cleaning</li>
+                        <li class="disabled">Spray Wax</li>
+                        <li class="disabled">Leather Conditioning</li>
+                    </ul>
+                    <a href="#book" class="btn btn-outline">Choose Plan</a>
+                </div>
+                <div class="pricing-card premium reveal" style="transition-delay: 0.1s;">
+                    <div class="badge">Most Popular</div>
+                    <h3>Premium Detail</h3>
+                    <div class="price">₹3500</div>
+                    <ul class="pricing-features">
+                        <li>Everything in Basic</li>
+                        <li>Premium Carnauba Wax</li>
+                        <li>Deep Interior Cleaning</li>
+                        <li>Leather Conditioning</li>
+                        <li>Engine Bay Wipe Down</li>
+                        <li class="disabled">Ceramic Coating</li>
+                    </ul>
+                    <a href="#book" class="btn btn-primary">Choose Plan</a>
+                </div>
+                <div class="pricing-card reveal" style="transition-delay: 0.2s;">
+                    <h3>Ultimate Ceramic</h3>
+                    <div class="price">₹5500</div>
+                    <ul class="pricing-features">
+                        <li>Everything in Premium</li>
+                        <li>Paint Decontamination</li>
+                        <li>1-Step Paint Correction</li>
+                        <li>3-Year Ceramic Coating</li>
+                        <li>Wheel Face Coating</li>
+                        <li>Glass Coating</li>
+                    </ul>
+                    <a href="#book" class="btn btn-outline">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>What Our Clients Say</h2>
+                <p>Don't just take our word for it.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Absolutely incredible service. My 5-year-old car looks better than the day I bought it off the
+                        lot. The ceramic coating is worth every penny!"</p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <i class="fa-solid fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Michael R.</h4>
+                            <span>Tesla Model S Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"The interior deep clean was magical. They managed to get out stains I thought were permanent.
+                        Professional, punctual, and highly recommended."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <i class="fa-solid fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Sarah W.</h4>
+                            <span>Audi Q7 Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 0.2s;">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>"ShineX Auto Spa sets the standard for detailing. The attention to detail is unmatched, and the
+                        staff is incredibly knowledgeable about paint protection."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <i class="fa-solid fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>David L.</h4>
+                            <span>Porsche 911 Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="booking section">
+        <div class="container">
+            <div class="booking-wrapper reveal">
+                <div class="booking-info">
+                    <h2>Book Your Appointment</h2>
+                    <p>Ready to give your car the spa treatment it deserves? Fill out the form, and our team will get
+                        back to you to confirm your slot.</p>
+                    <div class="contact-methods">
+                        <div class="method">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <span>hello@shinexautospa.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <input type="text" id="bName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="bPhone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="bEmail" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="bVehicle" placeholder="Vehicle Make & Model" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="bService" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="Basic Wash">Basic Wash</option>
+                                <option value="Premium Detail">Premium Detail</option>
+                                <option value="Ultimate Ceramic Package">Ultimate Ceramic Package</option>
+                                <option value="Other">Other / Custom</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="bDate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="bInstructions" placeholder="Special Instructions (Optional)">
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contactFormSection" class="contact section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Get In Touch</h2>
+                <p>Have questions? Send us a message and we'll get back to you.</p>
+            </div>
+            <div class="contact-wrapper reveal" style="max-width: 600px; margin: 0 auto;">
+                <form class="booking-form" id="contactForm">
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <input type="text" id="cName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <input type="email" id="cEmail" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <textarea id="cMessage" rows="5" placeholder="Your Message" required style="width: 100%; padding: 16px 20px; background: rgba(0, 0, 0, 0.3); border: 1px solid var(--glass-border); border-radius: 8px; color: #fff; font-size: 1rem; resize: vertical; outline: none; transition: var(--transition);"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-car-sparkles"></i> Shine<span>X</span>
+                    </a>
+                    <p>Premium car detailing services dedicated to making your vehicle shine like new. Quality, passion,
+                        and perfection in every detail.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#book">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Exterior Detailing</a></li>
+                        <li><a href="#services">Interior Cleaning</a></li>
+                        <li><a href="#services">Ceramic Coating</a></li>
+                        <li><a href="#services">Paint Protection Film</a></li>
+                        <li><a href="#services">Paint Correction</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Luxury Drive, Beverly Hills, CA 90210</li>
+                        <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@shinexautospa.com</li>
+                        <li><i class="fa-solid fa-clock"></i> Mon-Sat: 8AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShineX Auto Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
