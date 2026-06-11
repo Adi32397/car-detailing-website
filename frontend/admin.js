@@ -1,4 +1,10 @@
-const API_BASE = 'http://localhost:3000/api';
+const getApiBase = (path) => {
+    if (window.location.protocol === 'file:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        return `http://127.0.0.1:3000/api${path}`;
+    }
+    return `/api${path}`;
+};
+const API_BASE = getApiBase('');
 
 // Helper to get headers
 function getAuthHeaders() {
